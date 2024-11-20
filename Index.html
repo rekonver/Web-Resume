@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Ліва частина -->
+    <aside class="sidebar">
+      <img src="img/MyPhoto.jpg" alt="Фото" class="profile-photo">
+      <section class="short-info">
+        <h2>Контакти</h2>
+        <ul>
+          <li>Email: <a href="mailto:bogdangogol333@gmail.com">bogdangogol333@gmail.com</a></li>
+          <li>Телефон: +380 98 256 3736</li>
+        </ul>
+      </section>      
+      <section class="switch-container">
+        <div class="switch">
+          <span id="hard-btn" class="active">Hard Skills</span>
+          <span id="soft-btn">Soft Skills</span>
+        </div>
+      </section>
+      <section id="hard-skills" class="skills">
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+        </ul>
+      </section>
+      <section id="soft-skills" class="skills hidden">
+        <ul>
+          <li>Комунікабельність</li>
+          <li>Креативність</li>
+          <li>Працьовитість</li>
+          <li>Командна робота</li>
+        </ul>
+      </section>
+      <!-- Додано кнопку Portfolio -->
+      <section class="portfolio-section">
+        <button id="portfolio-widget-btn" class="portfolio-widget-btn">Portfolio</button>
+      </section>
+    </aside>
+
+    <!-- Права частина -->
+    <main class="content">
+    <header>
+        <h1>Гоголь Богдан</h1>
+        <p>Front розробник</p>
+    </header>
+    
+    <section class="about-me">
+        <h2>Про мене</h2>
+        <p>
+        Прагну розвиватися у веброзробці та співпрацювати з командою досвідчених професіоналів, щоб вдосконалювати свої навички та ефективно вирішувати завдання. Навчався здебільшого самостійно за відеоуроками й статтями, що допомогло мені швидко знаходити рішення для більшості проблем, з якими стикався.
+        </p>
+        <p>
+        Окрім веброзробки, маю базовий досвід у C# для створення ігор, Python для роботи з базами даних, а також працював із векторною графікою в Adobe Illustrator та Photoshop для створення якісного візуального контенту.
+        </p>
+    </section>
+    
+    <section class="experience">
+        <h2>Досвід</h2>
+        <ul>
+        <li>
+            <strong>Навчальний проєкт: Створення вебсайту по прикладу</strong> (2023)<br>
+            - Розробив вебсайт із використанням HTML, CSS та JavaScript.<br>
+            - Навички: адаптивна верстка, створення структурованого коду, UI-дизайн.
+        </li>
+        <li>
+            <strong>Командний проєкт: Програма, яка відслідковує зміни на сайті</strong> (2023)<br>
+            - За допомогою HTTP-запитів програма перевіряла значення певної змінної та видавала звуковий сигнал у разі змін.<br>
+            - Дизайн мобільної програми для зручної передачі даних на сервер.
+        </li>
+        </ul>
+    </section>
+    
+    <section class="education">
+        <h2>Освіта</h2>
+        <ul>
+        <li>
+            <strong>Вінницький технічний фаховий коледж</strong> — 
+            Спеціальність: Комп'ютерна інженерія<br>
+            Дата вступу: 2022 — в даний момент на третьому курсі.
+        </li>
+        </ul>
+    </section>
+    </main>
+
+  </div>
+
+    <!-- Центральний віджет -->
+    <div id="portfolio-widget" class="portfolio-widget hidden">
+      <div class="widget-content">
+        <h2>Мої роботи</h2>
+        <ul>
+          <li><a href="https://rekonver.github.io/SiteMadeByExample/" target="_blank">Site-Made-By-Example</a></li>
+          <li><a href="https://rekonver.github.io/A-little-Bit-Of-Js/" target="_blank">A-little-Bit-Of-Js</a></li>
+        </ul>
+        <button id="close-widget" class="close-widget-btn">Закрити</button>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
